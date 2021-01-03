@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrontActivity">
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="logout"
+        android:text="登出"
+        android:textColor="@color/black"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mygrade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_courseinfo"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="courseinfo"
+        android:text="課程資訊"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_accinfo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/btn_grade" />
+
+    <Button
+        android:id="@+id/btn_grade"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="gradecourse"
+        android:text="課程成績"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_courseinfo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/btn_stdinfo" />
+
+    <Button
+        android:id="@+id/btn_courselist"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="courselist"
+        android:text="課程清單"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_stdinfo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pwd" />
+
+    <Button
+        android:id="@+id/btn_stdinfo"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="stdinfo"
+        android:text="學生資訊"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_grade"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/btn_courselist" />
+
+    <Button
+        android:id="@+id/btn_mygrade"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="mygrade"
+        android:text="我的成績"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <Button
+        android:id="@+id/btn_accinfo"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="editacc"
+        android:text="編輯賬戶"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/btn_courseinfo" />
+
+    <Button
+        android:id="@+id/btn_pwd"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:onClick="changepwd"
+        android:text="修改密碼"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_courselist"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mygrade" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

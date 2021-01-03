@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Grade Keeper</string>
+    <string-array name="user_type">
+        <item>教授</item>
+        <item>學生</item>
+        <item>管理員</item>
+    </string-array>
+    <string-array name="course_year_list">
+        <item>請選擇年分</item>
+        <item>110-1</item>
+        <item>109-2</item>
+        <item>109-1</item>
+    </string-array>
+</resources>
